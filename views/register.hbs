@@ -1,0 +1,25 @@
+<main>
+         <div>
+            <div class="errorContainer">
+                {{#each errors}}
+                <p>{{this}}</p>
+                {{/each}}
+            </div>
+        </div> 
+
+        <div class="register-box">
+            <h1>Register</h1>
+            <form method="post">
+                <label>Username</label>
+                <input type="text" name="username" placeholder="Username..">
+                <label>Email</label>
+                <input type="text" name="email" placeholder="Email..">
+                <label>Password</label>
+                <input type="password" name="password" placeholder="Password..">
+                <label>Confirm Password</label>
+                <input type="password" name="repassword" placeholder="Confirm Password..">
+                <input type="submit" value="Submit">
+            </form>
+            <p>Already have an account? <a href="/login">Login here</a></p>
+        </div>
+    </main>
